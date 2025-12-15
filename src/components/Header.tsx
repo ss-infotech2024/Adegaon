@@ -25,20 +25,7 @@ const Header = () => {
       <div className="bg-maroon-dark py-2 px-4">
         <div className="container flex items-center justify-between text-primary-foreground text-sm">
           <span className="hidden md:block">स्वागत आहे! अडेगांव ग्रामपंचायत अधिकृत वेबसाईट</span>
-          <div className="flex items-center gap-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
-              <Facebook className="w-4 h-4" />
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
-              <Youtube className="w-4 h-4" />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
-              <Instagram className="w-4 h-4" />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
-              <Twitter className="w-4 h-4" />
-            </a>
-          </div>
+
         </div>
       </div>
 
@@ -62,9 +49,8 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`nav-link text-primary-foreground ${
-                  location.pathname === item.path ? "text-gold after:w-full" : ""
-                }`}
+                className={`nav-link text-primary-foreground ${location.pathname === item.path ? "text-gold after:w-full" : ""
+                  }`}
               >
                 {item.label}
               </Link>
@@ -73,9 +59,7 @@ const Header = () => {
 
           {/* Search & Mobile Menu */}
           <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-gold hover:bg-maroon-dark">
-              <Search className="w-5 h-5" />
-            </Button>
+
             <Button
               variant="ghost"
               size="icon"
@@ -96,11 +80,10 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-4 py-3 rounded-lg text-primary-foreground transition-colors ${
-                  location.pathname === item.path
-                    ? "bg-gold text-maroon-dark font-semibold"
-                    : "hover:bg-primary"
-                }`}
+                className={`px-4 py-3 rounded-lg text-primary-foreground transition-colors ${location.pathname === item.path
+                  ? "bg-gold text-maroon-dark font-semibold"
+                  : "hover:bg-primary"
+                  }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}

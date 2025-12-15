@@ -100,10 +100,7 @@ const Schemes = () => {
                     <h4 className="font-semibold text-foreground text-sm mb-1">अर्ज कसे करावे:</h4>
                     <p className="text-sm text-muted-foreground">{scheme.howToApply}</p>
                   </div>
-                  <Button variant="outline" className="w-full mt-4">
-                    <FileText className="w-4 h-4 mr-2" />
-                    अधिक माहिती
-                  </Button>
+
                 </CardContent>
               </Card>
             ))}

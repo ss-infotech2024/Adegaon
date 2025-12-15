@@ -40,11 +40,9 @@ const Documents = () => {
                 </div>
                 <div className="flex-1 min-w-0">
                   <h3 className="font-bold text-foreground truncate">{doc.name}</h3>
-                  <p className="text-sm text-muted-foreground">{doc.type} • {doc.size}</p>
+                  <p className="text-sm text-muted-foreground"></p>
                 </div>
-                <Button variant="ghost" size="icon" className="shrink-0 hover:text-accent">
-                  <Download className="w-5 h-5" />
-                </Button>
+
               </div>
             ))}
           </div>

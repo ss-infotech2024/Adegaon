@@ -32,20 +32,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            <div className="flex gap-3 mt-4">
-              <a href="#" className="w-9 h-9 bg-gold/20 rounded-full flex items-center justify-center hover:bg-gold hover:text-maroon-dark transition-colors">
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-9 h-9 bg-gold/20 rounded-full flex items-center justify-center hover:bg-gold hover:text-maroon-dark transition-colors">
-                <Youtube className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-9 h-9 bg-gold/20 rounded-full flex items-center justify-center hover:bg-gold hover:text-maroon-dark transition-colors">
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-9 h-9 bg-gold/20 rounded-full flex items-center justify-center hover:bg-gold hover:text-maroon-dark transition-colors">
-                <Twitter className="w-4 h-4" />
-              </a>
-            </div>
+
           </div>
 
           {/* Important Links */}
@@ -112,7 +99,7 @@ const Footer = () => {
       <div className="border-t border-maroon-light/20">
         <div className="container py-4 flex flex-col md:flex-row items-center justify-between gap-2 text-sm opacity-80">
           <p>© २०२५ ग्रामपंचायत अडेगांव | सर्व हक्क राखीव</p>
-          <p>विकसित केलेले: xAI द्वारे</p>
+          <p>विकसित केलेले: SS Infotech द्वारे</p>
         </div>
       </div>
     </footer>

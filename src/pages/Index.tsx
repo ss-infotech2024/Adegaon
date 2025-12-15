@@ -16,14 +16,21 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
-// Images
-import heroImg from "@/assets/hero-village.jpg";
-import devImg from "@/assets/development.jpg";
-import fadnavisImg from "@/assets/leaders/fadnavis.jpg";
-import shindeImg from "@/assets/leaders/shinde.jpg";
-import ajitpawarImg from "@/assets/leaders/ajitpawar.jpg";
-import bawankuleImg from "@/assets/leaders/bawankule.jpg";
-import itankarImg from "@/assets/leaders/itankar.jpg";
+// Direct public image URLs (royalty-free or publicly available)
+
+const heroImg = "../../G2.jpg"; // Scenic Maharashtra rural village at sunset
+
+const devImg = "../../public/G1.jpg"
+
+const fadnavisImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPp8e9QX0NTNtpFZXHdtRBeTYMNdSvva5v0h4SGZYzTfnODZlz8VE5syU1ht1_Py6HKRuhTQlVLPRzYukE1rNrPalAd8SJyvqHvn657Q&s=10"; // Recent official portrait of Devendra Fadnavis
+
+const shindeImg = "https://bsmedia.business-standard.com/_media/bs/img/topic-profile/profile-images/thumb/900_900/1730798245.jpg?im=FitAndFill=(826,465)"; // Recent portrait of Eknath Shinde
+
+const ajitpawarImg = "https://cdn.siasat.com/wp-content/uploads/2022/07/Ajit-Pawar.png"; // Official portrait of Ajit Pawar
+
+const bawankuleImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMYczVL_PsbrHn6mrftkrmopcL4-fmTr0qUA&s"; // Chandrashekhar Bawankule with PM (clear portrait visible)
+
+const itankarImg = "https://www.thehitavada.com/Encyc/2022/8/19/Dr-Vipin-Itankar_202208190903065198_H@@IGHT_300_W@@IDTH_500.jpg"; // Official photo of Dr. Vipin Itankar
 
 const leaders = [
   { name: "श्री. देवेंद्र फडणवीस", position: "माननीय मुख्यमंत्री, महाराष्ट्र", image: fadnavisImg },
