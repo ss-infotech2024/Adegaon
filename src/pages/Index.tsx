@@ -31,13 +31,16 @@ const ajitpawarImg = "https://cdn.siasat.com/wp-content/uploads/2022/07/Ajit-Paw
 const bawankuleImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMYczVL_PsbrHn6mrftkrmopcL4-fmTr0qUA&s"; // Chandrashekhar Bawankule with PM (clear portrait visible)
 
 const itankarImg = "https://www.thehitavada.com/Encyc/2022/8/19/Dr-Vipin-Itankar_202208190903065198_H@@IGHT_300_W@@IDTH_500.jpg"; // Official photo of Dr. Vipin Itankar
-
+ const Vinayaka= "https://static.toiimg.com/thumb/msid-112908113,width-1280,height-720,resizemode-72/112908113.jpg";
 const leaders = [
   { name: "श्री. देवेंद्र फडणवीस", position: "माननीय मुख्यमंत्री, महाराष्ट्र", image: fadnavisImg },
   { name: "श्री. एकनाथ शिंदे", position: "माननीय उपमुख्यमंत्री, महाराष्ट्र", image: shindeImg },
-  { name: "श्री. अजित पवार", position: "माननीय उपमुख्यमंत्री, महाराष्ट्र", image: ajitpawarImg },
-  { name: "श्री. चंद्रशेखर बावनकुळे", position: "माननीय पालकमंत्री, नागपूर", image: bawankuleImg },
-  { name: "डॉ. विपिन इतानकर", position: "जिल्हाधिकारी, नागपूर", image: itankarImg },
+  {
+    name: "विनायक महामुनी",
+    position: "मुख्य कार्यकारी अधिकारी",
+    image:Vinayaka
+   
+  }
 ];
 
 const services = [
@@ -96,19 +99,21 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Leaders Section */}
-      <section className="py-16 bg-secondary">
-        <div className="container">
-          <h2 className="section-title text-center mx-auto mb-12">महाराष्ट्र सरकार नेतृत्व</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
-            {leaders.map((leader, index) => (
-              <div key={leader.name} className="animate-fade-in-up" style={{ animationDelay: `${index * 100}ms` }}>
-                <LeaderCard {...leader} />
-              </div>
-            ))}
+  {/* Leaders Section */}
+<section className="py-20 bg-secondary">
+  <div className="container">
+    <h2 className="section-title text-center mx-auto mb-12">महाराष्ट्र सरकार नेतृत्व</h2>
+    <div className="flex justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 max-w-4xl">
+        {leaders.map((leader, index) => (
+          <div key={leader.name} className="animate-fade-in-up" style={{ animationDelay: `${index * 100}ms` }}>
+            <LeaderCard {...leader} />
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Development Section */}
       <section className="py-16">
